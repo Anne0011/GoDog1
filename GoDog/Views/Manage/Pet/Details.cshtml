@@ -1,0 +1,74 @@
+﻿@model GoDog.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petBreed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petBreed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.petAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.petAge)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PetId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
